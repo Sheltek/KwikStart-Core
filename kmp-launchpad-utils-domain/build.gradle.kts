@@ -45,6 +45,12 @@ android {
     }
 }
 
+ktlint {
+    verbose.set(true)
+    outputToConsole.set(true)
+    ignoreFailures.set(true)
+}
+
 group = "com.github.bottlerocketstudios"
 version = "${libs.versions.launchpad.utils.domain.get()}-SNAPSHOT"
 
@@ -53,11 +59,28 @@ publishing {
         register<MavenPublication>("$name-release") {
             artifactId = name.lowercase()
             from(components["kotlin"])
-        }
-    }
-    repositories {
-        maven {
-            url = uri(layout.buildDirectory.dir("repo"))
+
+            pom {
+                description = "Domain components for Launchpad Utils"
+
+                licenses {
+                    license {
+                        name = "The Apache License, Version 2.0"
+                        url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    }
+                }
+            }
+
+            repositories {
+                maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/BottleRocketStudios/KMP-LaunchPad-Compose")
+                    credentials {
+                        username = System.getenv("GITHUB_ACTOR")
+                        password = System.getenv("GITHUB_TOKEN")
+                    }
+                }
+            }
         }
     }
 }
