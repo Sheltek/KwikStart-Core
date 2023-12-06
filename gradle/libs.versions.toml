@@ -1,0 +1,15 @@
+[versions]
+agp = "8.2.0"
+kotlin = "1.9.21"
+kt-lint-gradle = "11.6.1"
+
+compile-sdk = "34"
+min-sdk = "24"
+launchpad-utils-domain = "0.0.1"
+
+[libraries]
+
+[plugins]
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kt-lint-gradle = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "kt-lint-gradle" }
