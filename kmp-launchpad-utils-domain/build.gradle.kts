@@ -52,7 +52,7 @@ ktlint {
 }
 
 group = "com.github.bottlerocketstudios"
-version = "${libs.versions.launchpad.utils.domain.get()}-SNAPSHOT"
+version = libs.versions.launchpad.utils.domain.get()
 
 publishing {
     publications {
