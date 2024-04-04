@@ -1,9 +1,9 @@
-# LaunchPad Quick Start for Kotlin Multiplatform
+# KwikStart for Kotlin Multiplatform
 
-LaunchPad is an open-source, free-to-use project designed to empower you to bring your Kotlin Multiplatform projects to market faster. It provides a collection of tools and utilities to streamline your development process and eliminate the need for
+KwikStart is an open-source, free-to-use project designed to empower you to bring your Kotlin Multiplatform projects to market faster. It provides a collection of tools and utilities to streamline your development process and eliminate the need for
 reinventing the wheel.
 
-## LaunchPad Utils Domain
+## KwikStart Utils Domain
 
 This library offers a comprehensive set of domain utility interfaces and functions to simplify your coding experience. It empowers you to:
 
@@ -27,12 +27,13 @@ Provides comprehensive logging functionalities to track application behavior and
 
 ## Usage
 
-To integrate LaunchPad utils domain into your project, add the following dependency with the latest version number:
+To integrate KwikStart Core into your project, add the following dependency with the latest version number:
 
 ```kotlin
     commonMain.dependencies {
-    ...
-    implementation("com.github.bottlerocketstudios:kmp-launchpad-utils-domain:<version>")
+    
+    implementation("com.github.sheltek:kwikstart-core:<version>")
+   
 }
 ```
 
@@ -74,8 +75,8 @@ Now that you have generated your PAT, you'll need to configure it on your local 
 - Run the following commands, replacing YOUR_TOKEN_HERE with the actual token you copied:
 
 ```bash
-export LOCAL_GITHUB_TOKEN=YOUR_TOKEN_HERE
-export LOCAL_GITHUB_USERNAME=your-github-email@example.com
+export REPO_READ_TOKEN=YOUR_TOKEN_HERE
+export REPO_READ_USER=your-github-email@example.com
 ```
 
 Alternatively, you can add these lines to your shell profile file (e.g., .bashrc, .zshrc, or .bash_profile) to make them persistent.
@@ -85,8 +86,8 @@ Alternatively, you can add these lines to your shell profile file (e.g., .bashrc
 - To verify that your environment variables are set correctly, you can echo them in the terminal:
 
 ```bash
-echo $LOCAL_GITHUB_TOKEN
-echo $LOCAL_GITHUB_USERNAME
+echo $REPO_READ_TOKEN
+echo $REPO_READ_USER
 ```
 
 You should see the values you set.

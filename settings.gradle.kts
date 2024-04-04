@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Launchpad_Utils_Domain"
-include(":kmp-launchpad-utils-domain")
+rootProject.name = "KwikStart-Core"
+include(":kwikstart-core")

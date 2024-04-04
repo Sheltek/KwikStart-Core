@@ -7,7 +7,7 @@ kotlin-coroutine = "1.8.0-RC2"
 
 compile-sdk = "34"
 min-sdk = "24"
-launchpad-utils-domain = "0.0.4"
+kwikstart-core = "0.1.0"
 
 [libraries]
 androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidx-lifecycle" }
