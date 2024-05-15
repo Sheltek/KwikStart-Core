@@ -1,13 +1,17 @@
 [versions]
-agp = "8.2.2"
-androidx-lifecycle = "2.7.0"
-kotlin = "1.9.22"
-kt-lint-gradle = "12.1.0"
-kotlin-coroutine = "1.8.0-RC2"
+# Publishing version
+launchpad-utils-domain = "0.1.0"
 
+# Android SDK versions
 compile-sdk = "34"
 min-sdk = "24"
-launchpad-utils-domain = "0.0.4"
+
+# Dependency versions
+agp = "8.2.2"
+androidx-lifecycle = "2.7.0"
+kotlin = "1.9.23"
+kt-lint-gradle = "12.1.0"
+kotlin-coroutine = "1.8.0"
 
 [libraries]
 androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidx-lifecycle" }
