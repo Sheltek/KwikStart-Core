@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "KwikStart_Core"
+rootProject.name = "KwikStart-Core"
 include(":lib")
