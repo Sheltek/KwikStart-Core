@@ -1,12 +1,16 @@
 [versions]
-agp = "8.2.2"
-androidx-lifecycle = "2.7.0"
-kotlin = "1.9.23"
-kt-lint-gradle = "12.1.0"
+# Publishing Verion
+kwikstart-core = "0.2.0"
 
+# Android SDK
 compile-sdk = "34"
 min-sdk = "24"
-kwikstart-core = "0.1.0"
+
+# Library versions
+agp = "8.2.2"
+androidx-lifecycle = "2.8.3"
+kotlin = "1.9.23"
+kt-lint-gradle = "12.1.0"
 kotlin-coroutine = "1.8.0"
 
 [libraries]
